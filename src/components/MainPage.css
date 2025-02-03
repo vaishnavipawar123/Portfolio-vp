@@ -1,0 +1,159 @@
+/* General Styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    margin-top: 200px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fef8e8;
+    background: transparent;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #2b2b2b;
+    background: transparent;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    background: transparent;
+    
+}
+
+/* Hero Section */
+.hero-section {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9rem 4rem;
+    position: relative; /* Required for the background overlay */
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), /* Gradient overlay with opacity */
+        url('../assests/back2.jpg');
+    background-size: cover;
+    background-position: 10% 30% 20% 30%; /* Position image at the top left */
+    
+    
+}
+
+
+
+/* Faded Background Image */
+
+/* Background image with overlay */
+
+
+/* Hero Content */
+.hero-content {
+    max-width: 50%;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    
+    
+
+    
+    
+    
+}
+
+.hero-image{
+  background: transparent;
+}
+
+.hero-image img {
+  background: transparent;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 5px solid beige;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.button-group {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    background: transparent;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.btn-primary {
+    background-color: #f56a79;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    
+}
+
+.btn-primary:hover {
+    background-color: #e25768;
+    
+}
+
+.btn-secondary {
+    
+  color:#fff;
+    border: 2px solid #f56a79;
+    transition: all 0.3s ease;
+    background-color: #f56a79;
+    
+}
+
+.btn-secondary:hover {
+    background-color: beige;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 2rem 0;
+    position: fixed;
+    bottom: 0.1px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.social-icons a {
+    margin: 0;
+}
+
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}

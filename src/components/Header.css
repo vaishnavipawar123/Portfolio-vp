@@ -1,0 +1,137 @@
+
+/* Header.css */
+
+*{
+    background-color: #fff5d7;
+
+}
+
+
+/* Navbar Container */
+.navbar {
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+  }
+  
+  /* Navbar Content */
+  .navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+   
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none; /* Removes underline */
+    font-family: system-ui;
+    display: inline-block; /* Make it an inline-block for better control */
+    padding: 10px 10px; /* Adds space around the text inside the circle */
+    border-radius: 50%; /* Creates the circular shape */
+    background-color:#e25768; /* Optional: adds a background color inside the circle */
+    text-align: center; /* Centers the text horizontally */
+    line-height: ; /* Ensures proper vertical alignment inside the circle */
+  }
+  
+  
+  /* Desktop Menu */
+  .navbar-menu {
+    display: flex;
+    gap: 32px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .navbar-menu a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-menu a:hover {
+    color: gray;
+  }
+  
+  /* Register Button */
+  .navbar-register {
+    background-color: black;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .navbar-register:hover {
+    opacity: 0.8;
+  }
+  
+  /* Mobile Menu Button */
+  .navbar-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ensures text is centered */
+  }
+  
+  .mobile-menu li {
+    width: 100%;
+    padding: 10px 0; /* Adds spacing between menu items */
+  }
+  
+  .mobile-menu a {
+    display: block; /* Ensures the link takes up the full width of the row */
+    padding: 10px; /* Optional: adds padding around the link for better visual effect */
+    text-decoration: none; /* Optional: removes underline from the link */
+    color: #000; /* Default color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .mobile-menu a:hover {
+    color: #fff; /* Text color change on hover */
+    background-color: #ff5e6c; /* Background color change on hover */
+  }
+  
+  /* Gradient Underline */
+  /* .navbar-gradient {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, red, yellow, green, blue);
+  } */
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  
